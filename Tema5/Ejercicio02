@@ -1,0 +1,19 @@
+# Escribe una función que pueda decirte si un número (número entero) es primo o no.
+
+# Función areaTriangulo
+def esPrimo(numero):
+
+    # Buscar algún valor entre 2 y el número dado y verificar si el resto de la división es cero
+    for valor in range(2, numero):
+        if numero % valor == 0:
+            
+            return False
+
+    # Si ningún valor de resto ha sido cero, el número sólo primo 
+    return True
+
+# Ejermplo uso de la función
+n = 13
+n2 = 15
+print("El número", n, "es primo?", esPrimo(n))
+print("El número", n2, "es primo?", esPrimo(n2))

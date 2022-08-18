@@ -1,0 +1,19 @@
+# Escribe una función que pueda decirte si un año (número entero) es bisiesto o no.
+
+# Función para saber si es bisiesto
+def esBisiesto(year):
+
+    # Para saber si el año es bisiesto, hay que ver si es divisible por 4, 
+    # es decir, que el módulo de dicha división sea cero.
+    if year % 4 == 0:
+        return True
+    else:
+        return False
+
+# Ejermplo uso de la función
+n = 1984
+n2 = 1992
+print("El año", n, "es Bisiesto?", esBisiesto(n))
+print("El año", n2, "es Bisiesto?", esBisiesto(n2))
+
+
