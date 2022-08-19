@@ -1,0 +1,23 @@
+
+class Categoria:
+
+    idCategoria = None
+    nombre = ""
+
+class Proveedores:
+    idProveedor = 0
+    nombre = ""
+
+class Productos:
+
+    idProducto = 0
+    catProducto = Categoria()
+    precio = 0
+    size = 0
+    tipProducto = None
+    cifProveedor = Proveedores()
+
+MiProducto = Productos()
+MiProducto.cifProveedor.idProveedor
+MiProducto.catProducto.idCategoria
+

@@ -1,0 +1,21 @@
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def sonido(self):
+        pass
+
+# Las clases abstractas no se pueden instanciar. Hay que implemetar los métodos
+#bicho = Animal() 
+
+class Perro(Animal):
+
+    def sonido(self):
+        print("Guau")
+
+bicho = Perro()
+Perro.sonido("")
+
+
+
+

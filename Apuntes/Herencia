@@ -1,0 +1,62 @@
+# Clase Base
+class Juguete:
+    
+    # Atributos
+    _encendido = True
+
+    # Constructores
+    def __init__(self) -> None:
+        pass
+        
+    # Métodos
+    def enciende(self):
+        self._encendido = True
+
+    def apagado(self):
+        self._encendido = False
+
+    def isEncendido(self):
+        return self._encendido
+
+
+# Clase Hija
+class Potato(Juguete):
+
+    def __init__(self) -> None:
+        super().__init__()
+
+    def quitarOreja(self):
+        pass
+
+    def ponerOreja(self):
+        pass
+
+# Se puede heredar de más de una clase
+class Dino (Potato, Juguete): # Como Potato hereda de Juguete, Potato hay que indicarla la primera
+    
+    # Atributos
+    nombre = None
+
+    # Constructor
+    def __init__(self, nombre):
+        super().__init__() # Hacemos referencia al constructor de la clase que hereda
+        self.nombre = nombre
+        
+    def verEscamas(self):
+        pass
+
+# Puedo hacer mención tanto a los métodos de la clase Hija de la clase Padre.
+miJuguete = Potato()
+miJuguete.enciende()
+miJuguete.apagado()
+miJuguete.isEncendido()
+miJuguete.quitarOreja()
+miJuguete.ponerOreja()
+
+miJuguete2 = Dino()
+miJuguete2.enciende()
+miJuguete2.apagado()
+miJuguete2.isEncendido()
+miJuguete2.quitarOreja()
+miJuguete2.ponerOreja()
+miJuguete2.verEscamas()

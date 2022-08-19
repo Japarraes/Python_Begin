@@ -1,0 +1,32 @@
+# Clase dinámica: Las más utilizadas.
+class Dino:
+    
+    # Atributos
+    _encendido = True
+
+    # Constructores
+
+    # Métodos
+    def enciende(self):
+        self._encendido = True
+
+    def apagado(self):
+        self._encendido = False
+
+    def isEncendido(self):
+        return self._encendido
+
+# Clase estática: poco usadas. No usa <self> y para referirse a un atributo hay que nombrar a la clase.
+class Estatica:
+
+    # Atributos
+    numero = 0
+
+    # Métodos 
+    def incremento():
+        Estatica.numero +=1
+
+
+
+
+
