@@ -15,7 +15,7 @@ def InsertStudent(id, nombre, apellidos):
     cursor.close
     conn.close
 
-def ShowStudent(nombre):
+def ShowStudent():
 
     # Abrir base de datos y cursor
     conn = sqlite3.connect("misalumnos.db")
@@ -23,7 +23,7 @@ def ShowStudent(nombre):
 
     # Consultas a la base de datos
     
-    query = f"SELECT * FROM alumnos WHERE name = '{nombre}'"
+    query = f"SELECT * FROM ALUMNOS"
     
     rows = cursor.execute(query)
     

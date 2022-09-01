@@ -16,7 +16,7 @@ def main():
     InsertStudent(7, "Pedro", "Moreno")
     InsertStudent(8, "Teresa", "Sánchez")
 
-    ShowStudent("Teresa")
+    ShowStudent()
 
 if __name__ == "__main__":
     main()
